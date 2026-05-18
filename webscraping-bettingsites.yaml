@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
       - name: webscraping-bettingsites
-        image: bferi/webscraping-bettingsites:1.0.2
+        image: bferi/webscraping-bettingsites:1.1.1
+        env:
+        - name: PYTHONUNBUFFERED
+          value: "1"
         resources:
           requests:
             cpu: "250m"

@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
       - name: webscraping-flashscore
-        image: bferi/webscraping-flashscore:1.0.0
+        image: bferi/webscraping-flashscore:1.0.2
+        env:
+        - name: PYTHONUNBUFFERED
+          value: "1"
         resources:
           requests:
             cpu: "250m"
