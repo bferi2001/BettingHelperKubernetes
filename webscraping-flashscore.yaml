@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webscraping-flashscore
-        image: bferi/webscraping-flashscore:1.0.2
+        image: 192.168.100.18:5000/webscraping-flashscore:1.0.2
         env:
         - name: PYTHONUNBUFFERED
           value: "1"
